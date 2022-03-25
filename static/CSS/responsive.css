@@ -1,6 +1,12 @@
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 600px) {
-    .topnav .login-container {
+
+  #mur {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 3em 2em 3em;
+  }
+    /*.topnav .login-container {
       float: none;
     }
     .topnav a, .topnav input[type=text], .topnav .login-container button {
@@ -13,5 +19,5 @@
     }
     .topnav input[type=text] {
       border: 1px solid #ccc;
-    }
+    }*/
   }
