@@ -1,20 +1,9 @@
 <div id="toit">
-    {#<div id="baniere">
-        <div id="bienvenue">
-            <p>
-                Bienvenue sur le site du <br> 
-                SYMPOSIUM! <br>
-                <a href="{{ url_for('auth.abonnement') }}">Abonne toi</a>  à la news letter <br>
-                pour ne rien manquer.
-            </p>	
-        </div>
-    </div>#}
-    
+        
     <div id="ouverture">
         
         <div class="topnav">
             <a href="{{ url_for('auth.accueil') }}">Accueil</a>
-            {#<a href="{{ url_for('posts.post_list') }}">Blogs</a>#}
             <a href="{{ url_for('auth.apropos') }}">Qui sommes-nous?</a>
         </div>
 
@@ -26,8 +15,3 @@
 
     </div>
 </div>
-{#<div id="tableau">
-    <img id="image1" class="gallerie" src="{{url_for('static', filename='image/evt1.jpg')}}" alt="service1">
-    <img id="image2" class="gallerie" src="{{url_for('static', filename='image/evt2.jpeg')}}" alt="service2">
-    <img id="image3" class="gallerie" src="{{url_for('static', filename='image/evt3.jpeg')}}" alt="service3">
-</div>#}
