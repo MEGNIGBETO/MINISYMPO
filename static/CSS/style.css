@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #ebecf0;
+    font-family: "Open Sans", sans-serif;
+    /*min-height: 100vh;*/
+  }
+
+  body a {
+    text-decoration: none;
+    color: #172b4d;
+  }
+  /*body h1 {
+    font-family: "Song Myung", serif;
+  }*/
+
+/* DEFAULT STYLE */
+:root {
+    /*font-size: 16px;*/
+    --card-img-height: 200px;
+}
+
+#baniere {
+	height: 600px;
+	background-image:
+		linear-gradient(to bottom, rgba(10, 10, 10, 0.438), rgba(34, 34, 46, 0.712)),
+		url("/static/image/couverture.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top: 4px solid rgb(0, 0, 0);
+}
+
+#bienvenue p {
+	margin: 20% 0% 0% 60%;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: 20px;
+	line-height: 150%;
+}
+
+#bienvenue p a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+#ouverture {
+    padding: 1em 0;
+    border-top: 4px solid rgb(0, 0, 0);
+	border-bottom: 4px solid rgb(0, 0, 0);
+}
+
+/* Style the navbar */
+.topnav {
+	overflow: hidden;
+	margin-left: 2%;
+  }
+  
+  /* Navbar links */
+  .topnav a {
+	float: left;
+	display: block;
+	color: rgb(255, 102, 0);
+	text-align: center;
+	margin-right: 0.5em;
+	padding: 0.5em;
+	text-decoration: none;
+	font-size: 1.2em;
+  }
+  
+  /* Navbar links on mouse-over */
+  .topnav a:hover {
+	background-color: rgb(156, 156, 156);
+	color: rgb(0, 0, 0);
+  }
+  
+  /* Style the input container */
+  .topnav .login-container {
+	float: right;
+  }
+  
+  /* Style the input field inside the navbar */
+  .topnav input[type=text] {
+	padding: 6px;
+	margin-top: 0.5em;
+	font-size: 1.2em;
+	border: none;
+	width: 150px; /* adjust as needed (as long as it doesn't break the topnav) */
+  }
+  
+  /* Style the button inside the input container */
+  .topnav .login-container button {
+	float: right;
+	padding: 6px;
+	margin-top: 0.5em;
+	margin-right: 0.5em;
+	background: #ccc;
+	font-size: 1.2em;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .topnav .login-container button:hover {
+	background: #fff;
+  }
+  
+
+#tableau {	
+	display: flex;
+	margin: auto;
+}
+
+.gallerie {
+	height: 100px;
+	width: auto;
+}
+
+#image1 {
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: 1.5em;
+	margin-bottom: 1em;
+	border: 2px solid rgb(0, 0, 0);
+	box-shadow: 5px 5px 5px rgba(46, 46, 45, 0.3);
+}
+
+#image2 {
+	margin-top: 1em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	margin-bottom: 1em;
+	border: 2px solid rgb(0, 0, 0);
+	box-shadow: 5px 5px 5px rgba(46, 46, 45, 0.3);
+}
+
+#image3 {
+	margin-top: 1em;
+	margin-left: 1.5em;
+	margin-right: auto;
+	margin-bottom: 1em;
+	border: 2px solid rgb(0, 0, 0);
+	box-shadow: 5px 5px 5px rgba(46, 46, 45, 0.3);
+}
+
+#mur {
+	display: flex;
+	margin: 1em 3em 2em 3em;
+}
+
+.fenetre {
+	background-color: #fff;
+	margin: auto;
+}
+
+#sidebandeAnnonce {
+	width: 25%;
+    margin-top: 0%;
+	margin-left: 1em;
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 2%;
+	box-shadow: 5px 5px 5px rgba(46, 46, 45, 0.3);
+}
+
+#sidebandeAnnonce div {
+	margin-top: 5%;
+}
+
+#sidebandeAnnonce div h1 {
+	background-color: #ccc;
+	text-align: left;
+	font-size: 20px;
+	color: rgb(255, 102, 0);
+	padding: 2%;
+}
+
+#sidebandeAnnonce div img {
+	margin-left: 35%;
+}
+
+#sidebandeAnnonce .liste {
+	margin-top: 0%;
+	margin-left: 10%;
+	margin-bottom: 5%;
+	font-size: 15px;
+	line-height: 150%;
+}
+
+#sidebandeAnnonce p {
+	margin-bottom: 5%;
+	font-size: 15px;
+	line-height: 150%;
+}
+
+#sidebandeAnnonce a {
+	font-weight: bold;
+	color: rgb(255, 102, 0);
+}
+
+#corps {
+	width: 70%;
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 1%;
+	font-size: 1em;
+}
+
+#corps h1 {
+	background-color: #ccc;
+	text-align: left;
+	color: rgb(255, 102, 0);
+	padding: 2%;
+}
+
+#corps h2 {
+	text-align: left;
+	margin-left: 5%;
+	color: rgb(255, 102, 0);
+	line-height: 200%;
+}
+
+#corps p {
+	margin-left: 5%;
+	font-size: 15px;
+	line-height: 200%;
+}
+
+#corps .liste {
+	margin-left: 15%;
+	font-size: 15px;
+	line-height: 200%;
+}
+
+#terrasse {
+	border-top: 4px solid rgb(0, 0, 0);;
+	text-align: center;
+}
+
+#copyright p {
+	margin: 10px;
+	font-size: 20px;
+	text-align: center;
+	color: rgb(0, 0, 0);
+}

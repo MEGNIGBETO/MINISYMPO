@@ -1,0 +1,57 @@
+{% extends '/layouts/default.html' %}
+
+{% block title%}Qui sommes-nous? - {{super()}}{% endblock %}
+
+{% block body %}
+
+<div class="fenetre" id="corps">
+    <div>
+        <h1>Ecole de Boologie d'Adjarra</h1>
+        <p>
+            Conduit sous la direction du Docteur d'état en Sociologie et Anthropologie, l'Ecole de Boologie
+            d'Adjarra rassemble les étudiants du département de sociologie et d'anthropologie du centre 
+            universitaire d'adjarra qui partage la passion de découvrir les fondements d'une science: la boologie.
+            Les actions de l'Ecole de Boologie d'Adjarra vont dans le sens de promouvoir les savoirs endogènes
+            tout en recherchant des modèles capables de conduire à un rayonnement des peuples Africain et particulier
+            du Bénin. Les différentes réflexions en cours s'appuient fondamentalement sur la trilogie Fa-Vodun-Boo afin 
+            de mettre en exergue de nouveaux critères d'appréciation du bien être propre au béninois.
+        </p>  
+    </div>
+
+    <div>
+        <h1>Comité d'organisation du mini-symposium</h1>
+        <p>
+            Dans le cadre de l'organisation du Mini-symposium, un comité d'organition a été mis sur
+            pied. Découvrons ensemble les membres dudit comité!
+        </p>
+        <div>
+            <h2>Président</h2>
+            <img id="image1" class="gallerie" src="{{url_for('static', filename='image/evt1.jpg')}}" alt="10 Janvier et après?">
+            <p>
+                Au poste du président du comité, nous avons G. Souvenir Blaise MEGNIGBETO. Il est étudiant en troisième 
+                année de licence au département de sociologie et d'anthropologie à Adjarra.
+            </p>
+        </div>
+        <div>
+            <h2>Vice présidente</h2>
+            <img id="image1" class="gallerie" src="{{url_for('static', filename='image/evt1.jpg')}}" alt="10 Janvier et après?">
+            <p>
+                Le poste de vice présidente est occupé par mademoiselle XXXX. Elle est étudiante en deuxième 
+                année de licence au département de sociologie et d'anthropologie à Adjarra.
+            </p>
+        </div>
+        <div>
+            <h2>Secrétaire général</h2>
+            <img id="image1" class="gallerie" src="{{url_for('static', filename='image/evt1.jpg')}}" alt="10 Janvier et après?">
+            <p>
+                Le Secrétaire général du comité est monsieur XXXX. Il est étudiant en première 
+                année de licence au département de sociologie et d'anthropologie à Adjarra.
+            </p>
+        </div>
+    </div>
+</div>
+
+{% include 'layouts/partials/annonce.html' %}
+
+
+{% endblock %}
