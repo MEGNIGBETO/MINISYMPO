@@ -1,17 +1,14 @@
-<div id="toit">
-        
-    <div id="ouverture">
-        
-        <div class="topnav">
-            <a href="{{ url_for('auth.accueil') }}">Accueil</a>
-            <a href="{{ url_for('auth.apropos') }}">Qui sommes-nous?</a>
+<div class="topnav">
+    <div class="nav-ensemble">
+        <div class="dropdown">
+            <button class="dropbtn"> Menu </button>
+            <div class="dropdown-content">
+                <a href="{{ url_for('auth.accueil') }}">Accueil</a>
+                <a href="{{ url_for('auth.apropos') }}">Qui sommes-nous?</a>
+                {#<a href="#">Actualité</a>#}
+            </div>
         </div>
-
-        {% for message in get_flashed_messages() %}
-        <div class="alert alert-warning">
-            {{ message }}
-        </div>
-        {% endfor %}
-
+        {#<div class="elt"><a href="{{ url_for('auth.apropos') }}">Qui sommes-nous?</a></div>#}
     </div>
 </div>
+

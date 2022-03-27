@@ -5,7 +5,7 @@
   }
 
   body {
-    background: #ebecf0;
+    background: #f7f4f4;
     font-family: "Open Sans", sans-serif;
   }
 
@@ -14,74 +14,108 @@
     color: #172b4d;
   }
 
-
-#ouverture {
-    padding: 1em 0;
-    border-top: 4px solid rgb(0, 0, 0);
-	border-bottom: 4px solid rgb(0, 0, 0);
+.topnav {
+	background-color: rgb(0, 0, 0);
+	overflow: hidden;
+	margin: 0;
+	padding: .2em 0;
+	position: fixed;
+	top: 0;
+    width: 100%;
 }
 
-/* Style the navbar */
-.topnav {
-	overflow: hidden;
-	margin-left: 2%;
-  }
-  
-  /* Navbar links */
-  .topnav a {
+.topnav .nav-ensemble {
+	/*list-style-type: none;*/
+	padding: 0;
+}
+
+.topnav .nav-ensemble .elt {
+    float: left;
+}
+
+.topnav .nav-ensemble .elt a {
 	float: left;
-	display: block;
-	color: rgb(255, 102, 0);
-	text-align: center;
+    display: block;
+    color: rgb(255, 102, 0);
+    text-align: center;
 	margin-right: 0.5em;
-	padding: 0.5em;
-	text-decoration: none;
+    padding: 14px 16px;
 	font-size: 1.2em;
-  }
-  
-  /* Navbar links on mouse-over */
-  .topnav a:hover {
-	background-color: rgb(156, 156, 156);
+}
+
+/* Change the link color to black on hover */
+.topnav .nav-ensemble .elt a:hover {
+    background-color: rgb(156, 156, 156);
 	color: rgb(0, 0, 0);
-  }
-  
-  /* Style the input container */
-  .topnav .login-container {
-	float: right;
-  }
-  
-  /* Style the input field inside the navbar */
-  .topnav input[type=text] {
-	padding: 6px;
-	margin-top: 0.5em;
-	font-size: 1.2em;
-	border: none;
-	width: 150px; /* adjust as needed (as long as it doesn't break the topnav) */
-  }
-  
-  /* Style the button inside the input container */
-  .topnav .login-container button {
-	float: right;
-	padding: 6px;
-	margin-top: 0.5em;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.topnav .nav-ensemble .dropdown {
+	float: left;
+    /*display: block;*/
+    color: rgb(255, 102, 0);
+    text-align: left;
 	margin-right: 0.5em;
-	background: #ccc;
+    padding: 14px 16px;
 	font-size: 1.2em;
+}
+
+/* Style The Dropdown Button */
+.topnav .nav-ensemble .dropbtn {
+    background-color: #000000;
+    color: rgb(255, 102, 0);
 	border: none;
 	cursor: pointer;
-  }
-  
-  .topnav .login-container button:hover {
-	background: #fff;
-  }
+}
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.topnav .nav-ensemble .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f7f4f4;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	min-width: 160px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 102, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #000000
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+	position: fixed;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover {
+    background-color: rgb(156, 156, 156);
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(156, 156, 156);
+	color: rgb(0, 0, 0);
+}
 
 #mur {
 	display: flex;
 	margin: 1em 3em 2em 3em;
+	padding-top: 3em;
 }
 
 .fenetre {
-	background-color: #fff;
+	background-color: #ffffff;
 	margin: auto;
 }
 
@@ -89,9 +123,9 @@
 	width: 25%;
     margin-top: 0%;
 	margin-left: 1em;
-	border: 2px solid rgb(0, 0, 0);
+	/*border: 2px solid rgb(0, 0, 0);
 	border-radius: 2%;
-	box-shadow: 5px 5px 5px rgba(46, 46, 45, 0.3);
+	box-shadow: 5px 5px 5px rgba(46, 46, 45, 0.3);*/
 }
 
 #sidebandeAnnonce div {
@@ -142,9 +176,9 @@
 
 #corps {
 	width: 70%;
-	border: 2px solid rgb(0, 0, 0);
+	/*border: 2px solid rgb(0, 0, 0);
 	border-radius: 1%;
-	font-size: 1em;
+	font-size: 1em;*/
 }
 
 #corps h1 {
