@@ -7,6 +7,11 @@ def accueil():
     
     return render_template('pages/accueil.html')
 
+@auth.route("/actualite", methods=['GET', 'POST'])
+def actualite():
+
+    return render_template('pages/actualite.html')
+
 
 @auth.route("/apropos", methods=['GET', 'POST'])
 def apropos():

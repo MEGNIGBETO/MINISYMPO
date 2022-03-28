@@ -199,6 +199,27 @@
 	margin-left: 5%;
 	font-size: 15px;
 	line-height: 200%;
+	text-align: justify;
+}
+
+#mini-symposium .gallerie {
+	height: 400px;
+	width: auto;
+	margin-top: 1em;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-bottom: 1em;
+	border: 2px solid rgb(0, 0, 0);
+	box-shadow: 5px 5px 5px rgba(46, 46, 45, 0.3);
+}
+
+#corps #bienvenue {
+	text-align: center;
+	font-size: 20px;
+	margin-left: 5%;
+	font-weight: bold;
+	color: rgb(180, 100, 100);
+	line-height: 150%;
 }
 
 #corps .liste {

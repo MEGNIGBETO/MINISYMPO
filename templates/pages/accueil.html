@@ -4,14 +4,26 @@
 
 {% block body %}
 
-{% include 'layouts/partials/annonce.html' %}
-
-{#<div class="fenetre" id="corps">
+<div class="fenetre" id="corps">
     <div>
-        <h1>Bienvenue!</h1>
+        <h1>Mi kwa bô!</h1>
+        <p id="bienvenue">
+            Nous vous souhaitons la bienvenue sur le <br>
+            site de l'Ecole de boologie d'Adjarra
+        </p>
 
     </div>
+    <div id="mini-symposium">
+        <h1>Mini-symposium</h1>
+        <img class="gallerie" src="{{url_for('static', filename='image/affiche.jpg')}}" alt="affiche symposium">
+        <p>
+            Je veux prendre part aux activités du mini-symposium!
+            <a href="https://forms.gle/iexEohDkuuSjEaDZ8">S'inscrire ici</a>
+        </p> 
+    </div>
 
-</div>#}
+</div>
+
+{% include 'layouts/partials/annonce.html' %}
 
 {% endblock %}
