@@ -3,7 +3,7 @@
 
     #mur {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       margin: 1em .5em 2em .5em;
       padding-top: 3em;
     }
